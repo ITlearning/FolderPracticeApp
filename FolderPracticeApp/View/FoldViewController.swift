@@ -130,13 +130,26 @@ class FoldViewController: UIViewController {
         }
     }
 
+    private func fixImageOrientaion(image: UIImage) -> UIImage {
+        if image.imageOrientation == .up {
+            return image
+        }
+
+        UIGraphicsBeginImageContextWithOptions(image.size, false, image.scale)
+        let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
+        image.draw(in: rect)
+        guard let normalizedImage = UIGraphicsGetImageFromCurrentImageContext() else { return UIImage() }
+        UIGraphicsEndImageContext()
+
+        return normalizedImage
+    }
 }
 
 extension FoldViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
 
         if let image = info[.originalImage] as? UIImage {
-            let folder = Folder(index: UUID(), id: id, parentId: parentId, name: "IMG_\(Int.random(in: 100...10000))", photo: image.pngData())
+            let folder = Folder(index: UUID(), id: id, parentId: parentId, name: "IMG_\(Int.random(in: 100...10000))", photo: fixImageOrientaion(image: image).pngData())
             datas.append(folder)
             tableView.reloadData()
             CoreDataManager.shared.crateFolder(folder)

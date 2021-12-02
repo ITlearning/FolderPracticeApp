@@ -12,5 +12,5 @@ struct Folder {
     let id: Int
     let parentId: Int
     let name: String
-    let photo: URL?
+    let photo: Data?
 }

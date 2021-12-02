@@ -34,12 +34,11 @@ class TableViewCell: UITableViewCell {
         }
     }
     
-    var leftImage: URL? {
+    var leftImage: Data? {
         didSet {
             guard let image = leftImage else { return }
-            guard let data = NSData(contentsOf: image) else { return }
-            let im = UIImage(data: data as Data)
-            leftImageView.image = im
+            let selectImage = UIImage(data: image)
+            leftImageView.image = selectImage
         }
     }
     
@@ -66,7 +65,6 @@ class TableViewCell: UITableViewCell {
             $0.leading.equalTo(self.snp.leading).offset(10)
             $0.width.equalTo(50)
             $0.height.equalTo(55)
-            $0.bottom.equalTo(self.snp.bottom).offset(-10)
         }
         
         addSubview(centerLabel)

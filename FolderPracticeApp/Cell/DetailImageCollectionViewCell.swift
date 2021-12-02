@@ -17,11 +17,10 @@ class DetailImageCollectionViewCell: UICollectionViewCell {
             return imageView
     }()
     
-    var detailImage: URL? {
+    var detailImage: Data? {
         didSet {
             guard let image = detailImage else { return }
-            guard let data = try? Data(contentsOf: image) else { return }
-            imageView.image = UIImage(data: data)
+            imageView.image = UIImage(data: image)
         }
     }
     

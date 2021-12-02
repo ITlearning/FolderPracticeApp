@@ -24,7 +24,7 @@
 /* Begin PBXFileReference section */
 		1253A6A58235637971983B5A /* Pods_Project05.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Project05.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3136D45566D33C8DF9D28A13 /* Pods-Project05.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Project05.debug.xcconfig"; path = "Target Support Files/Pods-Project05/Pods-Project05.debug.xcconfig"; sourceTree = "<group>"; };
-		A82F1B2E27106F500046E1C6 /* Project05.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project05.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A82F1B2E27106F500046E1C6 /* FolderPracticeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolderPracticeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82F1B3127106F500046E1C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A82F1B3527106F500046E1C6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A82F1B3B27106F500046E1C6 /* Project05.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Project05.xcdatamodel; sourceTree = "<group>"; };
@@ -64,7 +64,7 @@
 		A82F1B2527106F500046E1C6 = {
 			isa = PBXGroup;
 			children = (
-				A82F1B3027106F500046E1C6 /* Project05 */,
+				A82F1B3027106F500046E1C6 /* FolderPracticeApp */,
 				A82F1B2F27106F500046E1C6 /* Products */,
 				2E1A038813142900D5C1DD0B /* Pods */,
 				D8EFFA0DE503CA603D771D49 /* Frameworks */,
@@ -74,12 +74,12 @@
 		A82F1B2F27106F500046E1C6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A82F1B2E27106F500046E1C6 /* Project05.app */,
+				A82F1B2E27106F500046E1C6 /* FolderPracticeApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A82F1B3027106F500046E1C6 /* Project05 */ = {
+		A82F1B3027106F500046E1C6 /* FolderPracticeApp */ = {
 			isa = PBXGroup;
 			children = (
 				A83EBF72271226DD00F0FA5E /* CoreData */,
@@ -91,7 +91,7 @@
 				A82F1B3F27106F520046E1C6 /* LaunchScreen.storyboard */,
 				A82F1B4227106F520046E1C6 /* Info.plist */,
 			);
-			path = Project05;
+			path = FolderPracticeApp;
 			sourceTree = "<group>";
 		};
 		A83EBF5727108F7C00F0FA5E /* View */ = {
@@ -141,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A82F1B2D27106F500046E1C6 /* Project05 */ = {
+		A82F1B2D27106F500046E1C6 /* FolderPracticeApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A82F1B4527106F520046E1C6 /* Build configuration list for PBXNativeTarget "Project05" */;
+			buildConfigurationList = A82F1B4527106F520046E1C6 /* Build configuration list for PBXNativeTarget "FolderPracticeApp" */;
 			buildPhases = (
 				81CF2292D96E2F7B99CC03AE /* [CP] Check Pods Manifest.lock */,
 				A82F1B2A27106F500046E1C6 /* Sources */,
@@ -155,9 +155,9 @@
 			);
 			dependencies = (
 			);
-			name = Project05;
+			name = FolderPracticeApp;
 			productName = Project05;
-			productReference = A82F1B2E27106F500046E1C6 /* Project05.app */;
+			productReference = A82F1B2E27106F500046E1C6 /* FolderPracticeApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -174,7 +174,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A82F1B2927106F500046E1C6 /* Build configuration list for PBXProject "Project05" */;
+			buildConfigurationList = A82F1B2927106F500046E1C6 /* Build configuration list for PBXProject "FolderPracticeApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -187,7 +187,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A82F1B2D27106F500046E1C6 /* Project05 */,
+				A82F1B2D27106F500046E1C6 /* FolderPracticeApp */,
 			);
 		};
 /* End PBXProject section */
@@ -401,12 +401,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXTCSPNUZ;
-				INFOPLIST_FILE = Project05/Info.plist;
+				INFOPLIST_FILE = FolderPracticeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.itlearning.Project05;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itlearning.FolderPracticeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -421,12 +421,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZMXTCSPNUZ;
-				INFOPLIST_FILE = Project05/Info.plist;
+				INFOPLIST_FILE = FolderPracticeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.itlearning.Project05;
+				PRODUCT_BUNDLE_IDENTIFIER = com.itlearning.FolderPracticeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -436,7 +436,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A82F1B2927106F500046E1C6 /* Build configuration list for PBXProject "Project05" */ = {
+		A82F1B2927106F500046E1C6 /* Build configuration list for PBXProject "FolderPracticeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A82F1B4327106F520046E1C6 /* Debug */,
@@ -445,7 +445,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A82F1B4527106F520046E1C6 /* Build configuration list for PBXNativeTarget "Project05" */ = {
+		A82F1B4527106F520046E1C6 /* Build configuration list for PBXNativeTarget "FolderPracticeApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A82F1B4627106F520046E1C6 /* Debug */,

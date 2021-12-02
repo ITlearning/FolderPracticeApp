@@ -11,7 +11,7 @@ class SelectImageViewController: UIViewController {
     
     private var mainSelectIndex: Int
     
-    private var array: [URL] = []
+    private var array: [Data?] = []
     
     private let cancelButton: UIButton = {
         let button = UIButton()
@@ -54,7 +54,7 @@ class SelectImageViewController: UIViewController {
         settingUI()
     }
     
-    init(index: Int, array: [URL]) {
+    init(index: Int, array: [Data?]) {
         mainSelectIndex = index
         self.array += array
         super.init(nibName: nil, bundle: nil)
@@ -116,7 +116,6 @@ extension SelectImageViewController: UICollectionViewDelegate, UICollectionViewD
     }
 
     func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        print(indexPath.row)
         if let itemCell = cell as? DetailImageCollectionViewCell {
             itemCell.scrollZoomSize = CGFloat(1.0)
         }
